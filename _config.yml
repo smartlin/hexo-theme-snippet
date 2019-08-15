@@ -30,7 +30,6 @@ rss: ''
 
 ## Carousel
 carousel:
-carousel:
  # img: './img/head-img.jpg'
  img: 
  url: 
