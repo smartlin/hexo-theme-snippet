@@ -7,30 +7,33 @@
 menu:
 - page: home
   url: /
-  icon:
-- page: 前端
-  url: /categories/前端/
-  icon:
-- page: 后端
-  url: /categories/后端/
-  icon:
-- page: 工具
-  url: /categories/工具/
-  icon:
-- page: 时间轴
-  url: /archives/
-  icon:
+  icon: fa-home
+- page: 分类
+  url: /categories
+  icon: fa-list
+# - page: 工具
+#   url: /工具/
+  # icon:
+- page: 归档
+  url: /archives
+  icon: fa-archive  
+- page: 关于我
+  url: /about
+  icon: fa-user
 
 ## favicon
 favicon: /favicon.ico
 
 ## Feed
-rss: /atom.xml
+#rss: /atom.xml
+rss: ''
 
 ## Carousel
 carousel:
-  img: './img/head-img.jpg'
-  url: 'https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=xs0pypd2'
+carousel:
+ # img: './img/head-img.jpg'
+ img: 
+ url: 
 
 # 各个小工具的设置
 
@@ -40,7 +43,7 @@ widgets:
   - notification
   - social
   - category
-  - archive
+  #- archive
   - tagcloud
   - friends
 
@@ -59,31 +62,30 @@ jsonContent:
 ## 网站公告设置
 notification: |-
             <p>
-                主题下载：<a href="https://github.com/shenliyang/hexo-theme-snippet" title="fork me" target="_blank">Snippet主题</a> <br/>
-                主题使用：<a href="https://github.com/shenliyang/hexo-theme-snippet/blob/master/README.md#常见问题" title="" target="_blank">常见使用问题</a> <br/>
-                支持主题：<a href="https://github.com/shenliyang/hexo-theme-snippet/stargazers">Star一下</a>
+                Hello 欢迎来访~ <br>
+               如果喜欢此博客，请保持持续关注哦，谢谢。
             </p>
 
 ## 社交设置
-social:
- - name: Github
-   icon: git
-   href: //github.com/shenliyang
- - name: 邮箱
-   icon: envelope-o
-   href: mailto:snippet@91h5.cc
- - name: 联系QQ
-   icon: qq
-   href: /
- - name: 微信
-   icon: weixin
-   href: /
- - name: QQ群
-   icon: users
-   href: /
- - name: RSS
-   icon: feed
-   href: /atom.xml
+# social:
+#  - name: Github
+#    icon: git
+#    href: //github.com/shenliyang
+#  - name: 邮箱
+#    icon: envelope-o
+#    href: mailto:snippet@91h5.cc
+#  - name: 联系QQ
+#    icon: qq
+#    href: /
+#  - name: 微信
+#    icon: weixin
+#    href: /
+#  - name: QQ群
+#    icon: users
+#    href: /
+#  - name: RSS
+#    icon: feed
+#    href: /atom.xml
 
 ## 文章分类设置
 cate_config:
@@ -110,18 +112,18 @@ tagcloud:
   wheelZoom: false
 
 ## 友链设置
-links:
-  - Hexo官网: https://hexo.io/zh-cn/
+# links:
+#   - Hexo官网: https://hexo.io/zh-cn/
 
 
 # 主题自定义个性化配置
 
 ## 网站宣传语
-branding:
+branding: 生而无畏，战至终章
 
 ## 设置banner背景图片
 banner:
-    img: http://snippet.shenliyang.com/img/banner.jpg
+    img: https://starlin.top/img/banner.jpg
 
 ## 首页列表底部面板
 homePanel: true
@@ -155,12 +157,12 @@ declaration:
   enable: true
   title: '转载声明'
   tip: |-
-      商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Snippet</a>
+      商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Starlin</a>
 
 ## 文章打赏
 reward:
-  alipay: ''
-  wepay: ''
+  # alipay: /img/wechatpay.jpg
+  # wepay: /img/alipay.jpg
   tip: 赞赏是不耍流氓的鼓励
 
 ## 主题评论
@@ -168,13 +170,13 @@ reward:
 ## Valine评论
 valine:
    enable: true
-   appId: xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz
-   appKey: erIpQac4azoCmgfBB7Dl9maa
+   appId: F7y3kRCgvEcxlzSpqV7SBsei-gzGzoHsz
+   appKey: MU0nMpM09SUk8rmUAjlxuMxd
    placeholder: 说点什么吧
    notify: false
-   verify: true
-   avatar: mm
-   meta: nick,mail
+   verify: false
+   avatar: wavatar # monsterid,identicon  ,retro,wavatar
+   meta: nick,mail,link # nick,mail,link
    pageSize: 10
 
 ### 畅言评论(需要ICP备案)
@@ -228,7 +230,7 @@ visit_counter:
 ## 网站访问统计分析
 
 ### 网盟CNZZ统计
-cnzz_analytics: 1263868967
+cnzz_analytics: 1274627689
 
 ### 百度统计
 baidu_analytics:
